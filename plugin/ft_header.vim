@@ -1,5 +1,5 @@
 if exists('g:loaded_ft_header_nvim') | finish | endif
-echo "FT_LOADED"
+
 if !has('nvim-0.5')
     echohl Error
     echom "Sorry this plugin only works with versions of neovim that support lua"
