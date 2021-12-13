@@ -25,15 +25,17 @@ function M.makeline(ops, width, is_fill)
     local fill = " "
     if is_fill
         then
+        res = res .. " "
+        stlen = stlen + 1
         fill = ops.fill
     end
 
-    for _ = stlen,width - endlen
+    for _ = stlen,width - endlen - 2
     do
         res = res .. fill
     end
 
-    return res .. ops.s_end
+    return res .. " " .. ops.s_end
 end
 
 function M.getline(index)
