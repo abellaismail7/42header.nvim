@@ -17,7 +17,7 @@ local config    = require("ft_header.config")
 function M.ft_logo()
     for i = 0,7
     do
-        util.ft_set_text(i+1, 48, config.ft_ascii_art[i]);
+        util.ft_set_text(i+1, 50, config.ft_ascii_art[i]);
     end
 end
 

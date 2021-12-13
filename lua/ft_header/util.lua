@@ -20,7 +20,7 @@ end
 
 function M.makeline(ops, width, is_fill)
     local res   = ops.start
-    local endlen = string.len(ops.s_end)
+    local endlen = string.len(ops.s_end) + 1
     local stlen = string.len(ops.start)
     local fill = " "
     if is_fill
@@ -30,7 +30,7 @@ function M.makeline(ops, width, is_fill)
         fill = ops.fill
     end
 
-    for _ = stlen,width - endlen - 2
+    for _ = stlen + 1,width - endlen
     do
         res = res .. fill
     end
