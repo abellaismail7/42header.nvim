@@ -1,6 +1,9 @@
 # 42 Header
 1337 (Khouribga)
 
+# Showcase
+![Screenshot](screen1.png)
+
 # Description
 42 standard header for nvim/lua editor.
 
