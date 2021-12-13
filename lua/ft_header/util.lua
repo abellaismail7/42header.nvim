@@ -13,7 +13,7 @@ end
 function M.get_user()
     return {
         name = os.getenv("USER") or "marvin",
-        mail = os.getenv("USER_MAIL") or "marvin@42.fr"
+        mail = os.getenv("USER_MAIL") or "<marvin@42.fr>"
     }
 end
 
