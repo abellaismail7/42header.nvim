@@ -49,6 +49,10 @@ end
 
 function M.ft_update(ops, login)
     local line = util.getline(9)
+    if line == nil
+        then
+        return
+    end
     local index = string.find(line, "Updated")
     if index ~= config.margin + 1
         then
